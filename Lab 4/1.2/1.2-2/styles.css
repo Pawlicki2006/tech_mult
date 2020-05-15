@@ -1,0 +1,25 @@
+#div_1 {
+  background: red;
+}
+
+#div_2 {
+  background: blue;
+}
+
+#div_3 {
+  background: green;
+}
+
+#div_1, #div_2, #div_3 {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#select {
+    width: 200px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+

@@ -1,0 +1,18 @@
+#div_1 {
+  background: red;
+}
+
+#div_2 {
+  background: blue;
+}
+
+#div_3 {
+  background: green;
+}
+
+#div_1, #div_2, #div_3 {
+    padding: 20px;
+    text-align: center;
+}
+
+

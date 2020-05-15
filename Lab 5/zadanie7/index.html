@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 7</title>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      id="container"
+      style="
+        width: 500px;
+        height: 500px;
+        background: #c4c4c4;
+        position: relative;
+      "
+    >
+      <div
+        id="div1"
+        class="box"
+        style="
+          width: 100px;
+          height: 100px;
+          background: red;
+          position: absolute;
+          top: 0;
+        "
+      ></div>
+      <div
+        id="div2"
+        class="box"
+        style="
+          width: 100px;
+          height: 100px;
+          background: green;
+          position: absolute;
+          top:50%;
+          transform: translateY(-50%);
+        "
+      ></div>
+      <div
+        id="div3"
+        class="box"
+        style="
+          width: 100px;
+          height: 100px;
+          background: blue;
+          position: absolute;
+          bottom: 0;
+        "
+      ></div>
+    </div>
+    <button id="animate">Animate</button>
+    <script src="./script.js"></script>
+  </body>
+</html>

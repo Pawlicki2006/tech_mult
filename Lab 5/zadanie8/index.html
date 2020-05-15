@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadanie 8</title>
+
+    <style>
+      .box {
+        position: relative;
+      }
+
+      .box .up {
+        font-size: 2rem;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+
+      .box .down {
+        font-size: 2rem;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+
+      .box:hover > .down {
+        opacity: 1;
+      }
+
+      .box:hover > .up {
+        opacity: 1;
+      }
+    </style>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      id="container"
+      style="
+        width: 500px;
+        height: 500px;
+        background: #c4c4c4;
+        position: relative;
+      "
+    >
+      <div
+        id="div1"
+        class="box"
+        style="width: 100px; height: 100px; background: red;"
+      >
+        <div class="up"><b>&#8593;</b></div>
+        <div class="down"><b>&#8595;</b></div>
+      </div>
+      <div class="separator" style="height: 100px;"></div>
+
+      <div
+        id="div2"
+        class="box"
+        style="width: 100px; height: 100px; background: green;"
+      >
+        <div class="up"><b>&#8593;</b></div>
+        <div class="down"><b>&#8595;</b></div>
+      </div>
+      <div class="separator" style="height: 100px;"></div>
+      <div
+        id="div3"
+        class="box"
+        style="width: 100px; height: 100px; background: blue;"
+      >
+        <div class="up"><b>&#8593;</b></div>
+        <div class="down"><b>&#8595;</b></div>
+      </div>
+    </div>
+    <button id="animate">Animate</button>
+    <script src="./script.js"></script>
+  </body>
+</html>
